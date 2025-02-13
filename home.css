@@ -38,7 +38,7 @@ body, html {
   
   /* Username styling */
   .username {
-    font-size: 16px;
+    font-size: 25px;
   }
   
   /* Logout button styling */
@@ -69,3 +69,85 @@ body, html {
   .DashBoard:hover {
     background-color: #726cc5;
   }
+  
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .feed {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feed h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .nav .info h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .nav .info p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .text p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  #postImg img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  
+  .like-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .like-btn:active {
+    background-color: #aab6c4;
+  }
+  
+  .like-btn span {
+    margin-left: 8px;
+  }
+  
+
+
+
+  
