@@ -1,153 +1,254 @@
 /* Reset some default styles */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Web name styling */
+.web-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Right section styling */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* User image styling */
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits well */
+}
+
+/* Username styling */
+.username {
+  font-size: 25px;
+}
+
+/* Logout button styling */
+.logout-btn {
+  padding: 5px 10px;
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background-color: #ff1c1c;
+}
+
+.DashBoard {
+  padding: 5px 10px;
+  background-color: #5694cd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.DashBoard:hover {
+  background-color: #726cc5;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.feed {
+  background-color: #e6e1e1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.feed h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.nav .info h4 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.nav .info p {
+  font-size: 14px;
+  color: #777;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+}
+
+#postImg img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.like-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.like-btn:active {
+  background-color: #aab6c4;
+}
+
+.like-btn span {
+  margin-left: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+      width: 80%; /* Increase container width on smaller screens */
   }
   
-  /* Navbar styling */
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+      flex-direction: column; /* Stack navbar items vertically */
+      padding: 10px;
   }
   
-  /* Web name styling */
   .web-name {
-    font-size: 24px;
-    font-weight: bold;
+      font-size: 20px; /* Smaller web name on mobile */
   }
   
-  /* Right section styling */
   .right-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+      gap: 10px;
   }
   
-  /* User image styling */
-  .user-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image fits well */
-  }
-  
-  /* Username styling */
   .username {
-    font-size: 25px;
+      font-size: 20px; /* Smaller username font on mobile */
   }
-  
-  /* Logout button styling */
+
+  .feed h2 {
+      font-size: 20px; /* Smaller feed title */
+  }
+
+  .nav {
+      flex-direction: row; /* Stack the nav items vertically */
+      align-items: flex-start;
+      margin-bottom: 0px;
+  }
+
+  .nav img {
+      width: 40px; /* Smaller user image */
+      height: 40px;
+  }
+
+  .nav .info h4 {
+      font-size: 16px; /* Smaller user name font */
+  }
+
+  .nav .info p {
+      font-size: 12px; /* Smaller text for bio */
+  }
+
+  .like-btn {
+      width: 100%; /* Full-width like button */
+      font-size: 14px; /* Smaller button font */
+  }
+.container{
+  height: 70vh;
+}
+  #postImg img {
+      height: 400px; /* Limit image height on mobile */
+  }
+
+  .DashBoard {
+      width: 100%; /* Full width dashboard button */
+      font-size: 14px; /* Smaller dashboard button font */
+  }
+
   .logout-btn {
-    padding: 5px 10px;
-    background-color: #ff4b4b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+      width: 100%; /* Full width logout button */
+      font-size: 14px; /* Smaller font for logout button */
   }
-  
-  .logout-btn:hover {
-    background-color: #ff1c1c;
+}
+
+/* Very small mobile devices (portrait mode) */
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px 15px; /* Adjust navbar padding */
   }
 
-  .DashBoard{
-      padding: 5px 10px;
-      background-color: #5694cd;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 14px;
+  .web-name {
+      font-size: 18px; /* Even smaller web name */
   }
 
-  .DashBoard:hover {
-    background-color: #726cc5;
+  .username {
+      font-size: 18px; /* Even smaller username font */
   }
-  
 
   .container {
-    width: 80%;
-    margin: 0 auto;
+      width: 90%; /* Take up more space on very small screens */
   }
-  
-  .feed {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+
   .feed h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
+      font-size: 18px; /* Smaller title */
   }
-  
-  .nav {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .nav img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
-  .nav .info h4 {
-    font-size: 18px;
-    margin: 0;
-    color: #333;
-  }
-  
-  .nav .info p {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  .text p {
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px;
-  }
-  
-  #postImg img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    margin-top: 15px;
-    border-radius: 8px;
-  }
-  
+
   .like-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+      font-size: 12px; /* Even smaller button font */
   }
-  
-  .like-btn:active {
-    background-color: #aab6c4;
+
+  .DashBoard, .logout-btn {
+      font-size: 12px; /* Smaller button fonts for small screens */
   }
-  
-  .like-btn span {
-    margin-left: 8px;
+
+  #postImg img {
+      max-height: 250px; /* Even smaller image */
   }
-  
-
-
-
-  
+}
